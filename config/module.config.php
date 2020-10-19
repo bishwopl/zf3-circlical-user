@@ -21,6 +21,7 @@ use CirclicalUser\Factory\Controller\Plugin\AuthenticationPluginFactory;
 use CirclicalUser\Mapper\UserMapper;
 use CirclicalUser\Mapper\UserPermissionMapper;
 use CirclicalUser\Mapper\UserResetTokenMapper;
+use CirclicalUser\Mapper\AuthenticationMapper;
 use CirclicalUser\Service\AccessService;
 use CirclicalUser\Service\AuthenticationService;
 use CirclicalUser\Factory\Service\AuthenticationServiceFactory;
@@ -93,6 +94,8 @@ return [
             UserEntityListener::class => UserEntityListenerFactory::class,
             UserMapper::class => UserMapperFactory::class,
             RedirectStrategy::class => RedirectStrategyFactory::class,
+            AuthenticationMapper::class => AbstractDoctrineMapperFactory::class,
+            RoleMapper::class => AbstractDoctrineMapperFactory::class,
         ],
 
         'abstract_factories' => [
