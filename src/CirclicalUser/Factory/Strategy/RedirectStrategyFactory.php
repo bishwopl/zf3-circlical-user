@@ -4,7 +4,7 @@ namespace CirclicalUser\Factory\Strategy;
 
 use CirclicalUser\Strategy\RedirectStrategy;
 use Laminas\ServiceManager\Factory\FactoryInterface;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class RedirectStrategyFactory implements FactoryInterface
 {
