@@ -60,7 +60,9 @@ return [
         'driver' => [
             'circlical_entities' => [
                 'class' => AnnotationDriver::class,
-                'paths' => \dirname(__DIR__) . '/src/CirclicalUser/Entity',
+                'paths' => [
+                    \dirname(__DIR__) . '/src/CirclicalUser/Entity',
+                ],
             ],
 
             'orm_default' => [
